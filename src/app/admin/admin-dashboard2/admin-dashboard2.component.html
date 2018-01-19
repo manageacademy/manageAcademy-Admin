@@ -13,823 +13,578 @@
 
   <!-- Main content -->
   <section class="content">
-    <!-- Info boxes -->
-    <div class="row">
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        <div class="info-box">
-          <span class="info-box-icon bg-aqua"><i class="ion ion-ios-gear-outline"></i></span>
-
-          <div class="info-box-content">
-            <span class="info-box-text">CPU Traffic</span>
-            <span class="info-box-number">90<small>%</small></span>
+    <form class="bootstrap-form-with-validation">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">Institute Details</h2>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="instituteName" class="control-label">Institute Name</label>
+                    <input type="text" name="instituteName" class="form-control" id="instituteName" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="instituteCode" class="control-label">Institute Code</label>
+                    <input type="text" name="instituteCode" class="form-control" id="instituteCode" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="instituteTIN" class="control-label">Institute TIN Number</label>
+                    <input type="text" name="instituteTIN" class="form-control" id="instituteTIN" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="instituteTAN" class="control-label">Institute TAN Number</label>
+                    <input type="text" name="instituteTAN" class="form-control" id="instituteTAN" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="numberOfStudents" class="control-label">Number Of Students</label>
+                    <input type="number" name="numberOfStudents" class="form-control" id="numberOfStudents" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="numberOfStaff" class="control-label">Nuber Of Staff</label>
+                    <input type="number" name="numberOfStaff" class="form-control" id="numberOfStaff" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="instituteRegisteredDate" class="control-label">Institute Registered Date (Started)</label>
+                    <input type="date" class="form-control" id="instituteRegisteredDate" name="instituteRegisteredDate" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="registeredLicience" class="control-label">Registered Licience</label>
+                    <input type="file" name="registeredLicience" id="registeredLicience" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <!-- /.info-box-content -->
         </div>
-        <!-- /.info-box -->
       </div>
-      <!-- /.col -->
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        <div class="info-box">
-          <span class="info-box-icon bg-red"><i class="fa fa-google-plus"></i></span>
-
-          <div class="info-box-content">
-            <span class="info-box-text">Likes</span>
-            <span class="info-box-number">41,410</span>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">Institute Stands As</h2>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="form-group">
+                    <div class="radio">
+                      <label class="control-label">
+                        <input type="radio" name="radio-group" />Parent Branch</label>
+                    </div>
+                    <div class="radio">
+                      <label class="control-label">
+                        <input type="radio" name="radio-group" checked />Subsidery Branch</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="search-input" class="control-label">Search for IParent nstitute Code</label>
+                    <div class="input-group">
+                      <div class="input-group-addon"><span> <i class="glyphicon glyphicon-search"></i></span></div>
+                      <input type="search" name="search-input" class="form-control" id="search-input" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="parentInstituteCode" class="control-label">Parent Institute Code</label>
+                    <input type="text" readonly name="parentInstituteCode" class="form-control" id="parentInstituteCode" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="parentInstituteName" class="control-label">Parent Institute Name</label>
+                    <input type="text" readonly name="parentInstituteName" class="form-control" id="parentInstituteName" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="parentInstituteTIN" class="control-label">Parent Institute TIN Number</label>
+                    <input type="text" readonly name="parentInstituteTIN" class="form-control" id="parentInstituteTIN" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="parentInstituteTAN" class="control-label">Parent Institute TAN Number</label>
+                    <input type="text" readonly name="parentInstituteTAN" class="form-control" id="parentInstituteTAN" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="parentInstituteRegisteredDate" class="control-label">Parent Institute Registered Date</label>
+                    <input type="date" readonly class="form-control" id="parentInstituteRegisteredDate" name="parentInstituteRegisteredDate" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="agreementLicienceAsSubsidery" class="control-label">Agreement Licience As Subsidery</label>
+                    <input type="file" name="agreementLicienceAsSubsidery" id="agreementLicienceAsSubsidery" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="agreementDatewithParent" class="control-label">Agreement Date with Parent</label>
+                    <input type="date" class="form-control" id="agreementDatewithParent" name="agreementDatewithParent" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <!-- /.info-box-content -->
         </div>
-        <!-- /.info-box -->
       </div>
-      <!-- /.col -->
-
-      <!-- fix for small devices only -->
-      <div class="clearfix visible-sm-block"></div>
-
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        <div class="info-box">
-          <span class="info-box-icon bg-green"><i class="ion ion-ios-cart-outline"></i></span>
-
-          <div class="info-box-content">
-            <span class="info-box-text">Sales</span>
-            <span class="info-box-number">760</span>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">Institute Nature</h2>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label for="governamentInstitute" class="control-label">
+                        <input type="checkbox" name="governamentInstitute" id="governamentInstitute" />Governament Institute</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label for="publicTrust" class="control-label">
+                        <input type="checkbox" name="publicTrust" id="publicTrust" />Public Trust</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label for="private" class="control-label">
+                        <input type="checkbox" name="private" id="private" />Private</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label for="aided" class="control-label">
+                        <input type="checkbox" name="aided" id="aided" />Aided</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label for="privateTrust" class="control-label">
+                        <input type="checkbox" name="privateTrust" id="privateTrust" />Private Trust</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <!-- /.info-box-content -->
         </div>
-        <!-- /.info-box -->
       </div>
-      <!-- /.col -->
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        <div class="info-box">
-          <span class="info-box-icon bg-yellow"><i class="ion ion-ios-people-outline"></i></span>
-
-          <div class="info-box-content">
-            <span class="info-box-text">New Members</span>
-            <span class="info-box-number">2,000</span>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">Affliated Under </h2>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label for="board" class="control-label">
+                        <input type="checkbox" name="board" id="board" />Board</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label for="university" class="control-label">
+                        <input type="checkbox" name="university" id="university" />University</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <!-- /.info-box-content -->
         </div>
-        <!-- /.info-box -->
       </div>
-      <!-- /.col -->
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <div class="col-md-12">
-        <div class="box">
-          <div class="box-header with-border">
-            <h3 class="box-title">Monthly Recap Report</h3>
-
-            <div class="box-tools pull-right">
-              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-              <div class="btn-group">
-                <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="dropdown">
-                    <i class="fa fa-wrench"></i></button>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-                </ul>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">Board or University Details</h2>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="boardName" class="control-label">Board Name</label>
+                    <input type="text" name="boardName" class="form-control" id="boardName" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="boardCode" class="control-label">Board Code</label>
+                    <input type="text" name="boardCode" class="form-control" id="boardCode" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="boardState" class="control-label">Board State</label>
+                    <input type="text" name="boardState" class="form-control" id="boardState" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="dateRegisteredwithBoard" class="control-label">Date of Institute Registered with Board</label>
+                    <input type="date" class="form-control" name="dateRegisteredwithBoard" id="dateRegisteredwithBoard" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="documents" class="control-label">Documents </label>
+                    <input type="file" name="documents" id="documents" />
+                  </div>
+                </div>
               </div>
-              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
             </div>
           </div>
-          <!-- /.box-header -->
-          <div class="box-body">
-            <div class="row">
-              <div class="col-md-8">
-                <p class="text-center">
-                  <strong>Sales: 1 Jan, 2014 - 30 Jul, 2014</strong>
-                </p>
-
-                <div class="chart">
-                  <!-- Sales Chart Canvas -->
-                  <canvas id="salesChart" style="height: 180px;"></canvas>
-                </div>
-                <!-- /.chart-responsive -->
-              </div>
-              <!-- /.col -->
-              <div class="col-md-4">
-                <p class="text-center">
-                  <strong>Goal Completion</strong>
-                </p>
-
-                <div class="progress-group">
-                  <span class="progress-text">Add Products to Cart</span>
-                  <span class="progress-number"><b>160</b>/200</span>
-
-                  <div class="progress sm">
-                    <div class="progress-bar progress-bar-aqua" style="width: 80%"></div>
-                  </div>
-                </div>
-                <!-- /.progress-group -->
-                <div class="progress-group">
-                  <span class="progress-text">Complete Purchase</span>
-                  <span class="progress-number"><b>310</b>/400</span>
-
-                  <div class="progress sm">
-                    <div class="progress-bar progress-bar-red" style="width: 80%"></div>
-                  </div>
-                </div>
-                <!-- /.progress-group -->
-                <div class="progress-group">
-                  <span class="progress-text">Visit Premium Page</span>
-                  <span class="progress-number"><b>480</b>/800</span>
-
-                  <div class="progress sm">
-                    <div class="progress-bar progress-bar-green" style="width: 80%"></div>
-                  </div>
-                </div>
-                <!-- /.progress-group -->
-                <div class="progress-group">
-                  <span class="progress-text">Send Inquiries</span>
-                  <span class="progress-number"><b>250</b>/500</span>
-
-                  <div class="progress sm">
-                    <div class="progress-bar progress-bar-yellow" style="width: 80%"></div>
-                  </div>
-                </div>
-                <!-- /.progress-group -->
-              </div>
-              <!-- /.col -->
-            </div>
-            <!-- /.row -->
-          </div>
-          <!-- ./box-body -->
-          <div class="box-footer">
-            <div class="row">
-              <div class="col-sm-3 col-xs-6">
-                <div class="description-block border-right">
-                  <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 17%</span>
-                  <h5 class="description-header">$35,210.43</h5>
-                  <span class="description-text">TOTAL REVENUE</span>
-                </div>
-                <!-- /.description-block -->
-              </div>
-              <!-- /.col -->
-              <div class="col-sm-3 col-xs-6">
-                <div class="description-block border-right">
-                  <span class="description-percentage text-yellow"><i class="fa fa-caret-left"></i> 0%</span>
-                  <h5 class="description-header">$10,390.90</h5>
-                  <span class="description-text">TOTAL COST</span>
-                </div>
-                <!-- /.description-block -->
-              </div>
-              <!-- /.col -->
-              <div class="col-sm-3 col-xs-6">
-                <div class="description-block border-right">
-                  <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 20%</span>
-                  <h5 class="description-header">$24,813.53</h5>
-                  <span class="description-text">TOTAL PROFIT</span>
-                </div>
-                <!-- /.description-block -->
-              </div>
-              <!-- /.col -->
-              <div class="col-sm-3 col-xs-6">
-                <div class="description-block">
-                  <span class="description-percentage text-red"><i class="fa fa-caret-down"></i> 18%</span>
-                  <h5 class="description-header">1200</h5>
-                  <span class="description-text">GOAL COMPLETIONS</span>
-                </div>
-                <!-- /.description-block -->
-              </div>
-            </div>
-            <!-- /.row -->
-          </div>
-          <!-- /.box-footer -->
         </div>
-        <!-- /.box -->
       </div>
-      <!-- /.col -->
-    </div>
-    <!-- /.row -->
-
-    <!-- Main row -->
-    <div class="row">
-      <!-- Left col -->
-      <div class="col-md-8">
-        <!-- MAP & BOX PANE -->
-        <div class="box box-success">
-          <div class="box-header with-border">
-            <h3 class="box-title">Visitors Report</h3>
-
-            <div class="box-tools pull-right">
-              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">Institute Adress Details</h2>
             </div>
-          </div>
-          <!-- /.box-header -->
-          <div class="box-body no-padding">
-            <div class="row">
-              <div class="col-md-9 col-sm-8">
-                <div class="pad">
-                  <!-- Map will be created here -->
-                  <div id="world-map-markers" style="height: 325px;"></div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="institutePlotNumber" class="control-label">Institute Plot Number</label>
+                    <input type="text" name="institutePlotNumber" class="form-control" id="institutePlotNumber" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="instituteStreet" class="control-label">Institute Street/Area</label>
+                    <input type="text" name="instituteStreet" class="form-control" id="instituteStreet" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="instituteMandal" class="control-label">Institute Taluq/Mandal</label>
+                    <input type="text" name="instituteMandal" class="form-control" id="instituteMandal" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="instituteCity" class="control-label">Institute Town/City</label>
+                    <input type="text" name="instituteCity" class="form-control" id="instituteCity" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="instituteDistrict" class="control-label">Institute District</label>
+                    <input type="text" name="instituteDistrict" class="form-control" id="instituteDistrict" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="instituteState" class="control-label">Institute State</label>
+                    <input type="text" name="instituteState" class="form-control" id="instituteState" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="institutePincode" class="control-label">Institute Pincode</label>
+                    <input type="text" name="institutePincode" class="form-control" id="institutePincode" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="institutePhone" class="control-label">Institute Phone No</label>
+                    <input type="text" name="institutePhone" class="form-control" id="institutePhone" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="instituteMobile" class="control-label">Institute Mobile No</label>
+                    <input type="text" name="instituteMobile" class="form-control" id="instituteMobile" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="instituteFax" class="control-label">Institute Fax</label>
+                    <input type="text" name="instituteFax" class="form-control" id="instituteFax" />
+                  </div>
                 </div>
               </div>
-              <!-- /.col -->
-              <div class="col-md-3 col-sm-4">
-                <div class="pad box-pane-right bg-green" style="min-height: 280px">
-                  <div class="description-block margin-bottom">
-                    <div class="sparkbar pad" data-color="#fff">90,70,90,70,75,80,70</div>
-                    <h5 class="description-header">8390</h5>
-                    <span class="description-text">Visits</span>
-                  </div>
-                  <!-- /.description-block -->
-                  <div class="description-block margin-bottom">
-                    <div class="sparkbar pad" data-color="#fff">90,50,90,70,61,83,63</div>
-                    <h5 class="description-header">30%</h5>
-                    <span class="description-text">Referrals</span>
-                  </div>
-                  <!-- /.description-block -->
-                  <div class="description-block">
-                    <div class="sparkbar pad" data-color="#fff">90,50,90,70,61,83,63</div>
-                    <h5 class="description-header">70%</h5>
-                    <span class="description-text">Organic</span>
-                  </div>
-                  <!-- /.description-block -->
-                </div>
-              </div>
-              <!-- /.col -->
             </div>
-            <!-- /.row -->
           </div>
-          <!-- /.box-body -->
         </div>
-        <!-- /.box -->
-        <div class="row">
-          <div class="col-md-6">
-            <!-- DIRECT CHAT -->
-            <div class="box box-warning direct-chat direct-chat-warning">
-              <div class="box-header with-border">
-                <h3 class="box-title">Direct Chat</h3>
-
-                <div class="box-tools pull-right">
-                  <span data-toggle="tooltip" title="3 New Messages" class="badge bg-yellow">3</span>
-                  <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                    </button>
-                  <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle">
-                      <i class="fa fa-comments"></i></button>
-                  <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
-                    </button>
-                </div>
-              </div>
-              <!-- /.box-header -->
-              <div class="box-body">
-                <!-- Conversations are loaded here -->
-                <div class="direct-chat-messages">
-                  <!-- Message. Default to the left -->
-                  <div class="direct-chat-msg">
-                    <div class="direct-chat-info clearfix">
-                      <span class="direct-chat-name pull-left">Alexander Pierce</span>
-                      <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
-                    </div>
-                    <!-- /.direct-chat-info -->
-                    <img class="direct-chat-img" src="assets/img/user1-128x128.jpg" alt="message user image">
-                    <!-- /.direct-chat-img -->
-                    <div class="direct-chat-text">
-                      Is this template really for free? That's unbelievable!
-                    </div>
-                    <!-- /.direct-chat-text -->
-                  </div>
-                  <!-- /.direct-chat-msg -->
-
-                  <!-- Message to the right -->
-                  <div class="direct-chat-msg right">
-                    <div class="direct-chat-info clearfix">
-                      <span class="direct-chat-name pull-right">Sarah Bullock</span>
-                      <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
-                    </div>
-                    <!-- /.direct-chat-info -->
-                    <img class="direct-chat-img" src="assets/img/user3-128x128.jpg" alt="message user image">
-                    <!-- /.direct-chat-img -->
-                    <div class="direct-chat-text">
-                      You better believe it!
-                    </div>
-                    <!-- /.direct-chat-text -->
-                  </div>
-                  <!-- /.direct-chat-msg -->
-
-                  <!-- Message. Default to the left -->
-                  <div class="direct-chat-msg">
-                    <div class="direct-chat-info clearfix">
-                      <span class="direct-chat-name pull-left">Alexander Pierce</span>
-                      <span class="direct-chat-timestamp pull-right">23 Jan 5:37 pm</span>
-                    </div>
-                    <!-- /.direct-chat-info -->
-                    <img class="direct-chat-img" src="assets/img/user1-128x128.jpg" alt="message user image">
-                    <!-- /.direct-chat-img -->
-                    <div class="direct-chat-text">
-                      Working with AdminLTE on a great new app! Wanna join?
-                    </div>
-                    <!-- /.direct-chat-text -->
-                  </div>
-                  <!-- /.direct-chat-msg -->
-
-                  <!-- Message to the right -->
-                  <div class="direct-chat-msg right">
-                    <div class="direct-chat-info clearfix">
-                      <span class="direct-chat-name pull-right">Sarah Bullock</span>
-                      <span class="direct-chat-timestamp pull-left">23 Jan 6:10 pm</span>
-                    </div>
-                    <!-- /.direct-chat-info -->
-                    <img class="direct-chat-img" src="assets/img/user3-128x128.jpg" alt="message user image">
-                    <!-- /.direct-chat-img -->
-                    <div class="direct-chat-text">
-                      I would love to.
-                    </div>
-                    <!-- /.direct-chat-text -->
-                  </div>
-                  <!-- /.direct-chat-msg -->
-
-                </div>
-                <!--/.direct-chat-messages-->
-
-                <!-- Contacts are loaded here -->
-                <div class="direct-chat-contacts">
-                  <ul class="contacts-list">
-                    <li>
-                      <a href="#">
-                          <img class="contacts-list-img" src="assets/img/user1-128x128.jpg" alt="User Image">
-
-                          <div class="contacts-list-info">
-                                <span class="contacts-list-name">
-                                  Count Dracula
-                                  <small class="contacts-list-date pull-right">2/28/2015</small>
-                                </span>
-                            <span class="contacts-list-msg">How have you been? I was...</span>
-                          </div>
-                          <!-- /.contacts-list-info -->
-                        </a>
-                    </li>
-                    <!-- End Contact Item -->
-                    <li>
-                      <a href="#">
-                          <img class="contacts-list-img" src="assets/img/user7-128x128.jpg" alt="User Image">
-
-                          <div class="contacts-list-info">
-                                <span class="contacts-list-name">
-                                  Sarah Doe
-                                  <small class="contacts-list-date pull-right">2/23/2015</small>
-                                </span>
-                            <span class="contacts-list-msg">I will be waiting for...</span>
-                          </div>
-                          <!-- /.contacts-list-info -->
-                        </a>
-                    </li>
-                    <!-- End Contact Item -->
-                    <li>
-                      <a href="#">
-                          <img class="contacts-list-img" src="assets/img/user3-128x128.jpg" alt="User Image">
-
-                          <div class="contacts-list-info">
-                                <span class="contacts-list-name">
-                                  Nadia Jolie
-                                  <small class="contacts-list-date pull-right">2/20/2015</small>
-                                </span>
-                            <span class="contacts-list-msg">I'll call you back at...</span>
-                          </div>
-                          <!-- /.contacts-list-info -->
-                        </a>
-                    </li>
-                    <!-- End Contact Item -->
-                    <li>
-                      <a href="#">
-                          <img class="contacts-list-img" src="assets/img/user5-128x128.jpg" alt="User Image">
-
-                          <div class="contacts-list-info">
-                                <span class="contacts-list-name">
-                                  Nora S. Vans
-                                  <small class="contacts-list-date pull-right">2/10/2015</small>
-                                </span>
-                            <span class="contacts-list-msg">Where is your new...</span>
-                          </div>
-                          <!-- /.contacts-list-info -->
-                        </a>
-                    </li>
-                    <!-- End Contact Item -->
-                    <li>
-                      <a href="#">
-                          <img class="contacts-list-img" src="assets/img/user6-128x128.jpg" alt="User Image">
-
-                          <div class="contacts-list-info">
-                                <span class="contacts-list-name">
-                                  John K.
-                                  <small class="contacts-list-date pull-right">1/27/2015</small>
-                                </span>
-                            <span class="contacts-list-msg">Can I take a look at...</span>
-                          </div>
-                          <!-- /.contacts-list-info -->
-                        </a>
-                    </li>
-                    <!-- End Contact Item -->
-                    <li>
-                      <a href="#">
-                          <img class="contacts-list-img" src="assets/img/user8-128x128.jpg" alt="User Image">
-
-                          <div class="contacts-list-info">
-                                <span class="contacts-list-name">
-                                  Kenneth M.
-                                  <small class="contacts-list-date pull-right">1/4/2015</small>
-                                </span>
-                            <span class="contacts-list-msg">Never mind I found...</span>
-                          </div>
-                          <!-- /.contacts-list-info -->
-                        </a>
-                    </li>
-                    <!-- End Contact Item -->
-                  </ul>
-                  <!-- /.contatcts-list -->
-                </div>
-                <!-- /.direct-chat-pane -->
-              </div>
-              <!-- /.box-body -->
-              <div class="box-footer">
-                <form action="#" method="post">
-                  <div class="input-group">
-                    <input type="text" name="message" placeholder="Type Message ..." class="form-control">
-                    <span class="input-group-btn">
-                            <button type="button" class="btn btn-warning btn-flat">Send</button>
-                          </span>
-                  </div>
-                </form>
-              </div>
-              <!-- /.box-footer-->
-            </div>
-            <!--/.direct-chat -->
-          </div>
-          <!-- /.col -->
-
-          <div class="col-md-6">
-            <!-- USERS LIST -->
-            <div class="box box-danger">
-              <div class="box-header with-border">
-                <h3 class="box-title">Latest Members</h3>
-
-                <div class="box-tools pull-right">
-                  <span class="label label-danger">8 New Members</span>
-                  <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                    </button>
-                  <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
-                    </button>
-                </div>
-              </div>
-              <!-- /.box-header -->
-              <div class="box-body no-padding">
-                <ul class="users-list clearfix">
-                  <li>
-                    <img src="assets/img/user1-128x128.jpg" alt="User Image">
-                    <a class="users-list-name" href="#">Alexander Pierce</a>
-                    <span class="users-list-date">Today</span>
-                  </li>
-                  <li>
-                    <img src="assets/img/user8-128x128.jpg" alt="User Image">
-                    <a class="users-list-name" href="#">Norman</a>
-                    <span class="users-list-date">Yesterday</span>
-                  </li>
-                  <li>
-                    <img src="assets/img/user7-128x128.jpg" alt="User Image">
-                    <a class="users-list-name" href="#">Jane</a>
-                    <span class="users-list-date">12 Jan</span>
-                  </li>
-                  <li>
-                    <img src="assets/img/user6-128x128.jpg" alt="User Image">
-                    <a class="users-list-name" href="#">John</a>
-                    <span class="users-list-date">12 Jan</span>
-                  </li>
-                  <li>
-                    <img src="assets/img/user2-160x160.jpg" alt="User Image">
-                    <a class="users-list-name" href="#">Alexander</a>
-                    <span class="users-list-date">13 Jan</span>
-                  </li>
-                  <li>
-                    <img src="assets/img/user5-128x128.jpg" alt="User Image">
-                    <a class="users-list-name" href="#">Sarah</a>
-                    <span class="users-list-date">14 Jan</span>
-                  </li>
-                  <li>
-                    <img src="assets/img/user4-128x128.jpg" alt="User Image">
-                    <a class="users-list-name" href="#">Nora</a>
-                    <span class="users-list-date">15 Jan</span>
-                  </li>
-                  <li>
-                    <img src="assets/img/user3-128x128.jpg" alt="User Image">
-                    <a class="users-list-name" href="#">Nadia</a>
-                    <span class="users-list-date">15 Jan</span>
-                  </li>
-                </ul>
-                <!-- /.users-list -->
-              </div>
-              <!-- /.box-body -->
-              <div class="box-footer text-center">
-                <a href="javascript:void(0)" class="uppercase">View All Users</a>
-              </div>
-              <!-- /.box-footer -->
-            </div>
-            <!--/.box -->
-          </div>
-          <!-- /.col -->
-        </div>
-        <!-- /.row -->
-
-        <!-- TABLE: LATEST ORDERS -->
-        <div class="box box-info">
-          <div class="box-header with-border">
-            <h3 class="box-title">Latest Orders</h3>
-
-            <div class="box-tools pull-right">
-              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-            </div>
-          </div>
-          <!-- /.box-header -->
-          <div class="box-body">
-            <div class="table-responsive">
-              <table class="table no-margin">
-                <thead>
-                  <tr>
-                    <th>Order ID</th>
-                    <th>Item</th>
-                    <th>Status</th>
-                    <th>Popularity</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a href="pages/examples/invoice.html">OR9842</a></td>
-                    <td>Call of Duty IV</td>
-                    <td><span class="label label-success">Shipped</span></td>
-                    <td>
-                      <div class="sparkbar" data-color="#00a65a" data-height="20">90,80,90,-70,61,-83,63</div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><a href="pages/examples/invoice.html">OR1848</a></td>
-                    <td>Samsung Smart TV</td>
-                    <td><span class="label label-warning">Pending</span></td>
-                    <td>
-                      <div class="sparkbar" data-color="#f39c12" data-height="20">90,80,-90,70,61,-83,68</div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><a href="pages/examples/invoice.html">OR7429</a></td>
-                    <td>iPhone 6 Plus</td>
-                    <td><span class="label label-danger">Delivered</span></td>
-                    <td>
-                      <div class="sparkbar" data-color="#f56954" data-height="20">90,-80,90,70,-61,83,63</div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><a href="pages/examples/invoice.html">OR7429</a></td>
-                    <td>Samsung Smart TV</td>
-                    <td><span class="label label-info">Processing</span></td>
-                    <td>
-                      <div class="sparkbar" data-color="#00c0ef" data-height="20">90,80,-90,70,-61,83,63</div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><a href="pages/examples/invoice.html">OR1848</a></td>
-                    <td>Samsung Smart TV</td>
-                    <td><span class="label label-warning">Pending</span></td>
-                    <td>
-                      <div class="sparkbar" data-color="#f39c12" data-height="20">90,80,-90,70,61,-83,68</div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><a href="pages/examples/invoice.html">OR7429</a></td>
-                    <td>iPhone 6 Plus</td>
-                    <td><span class="label label-danger">Delivered</span></td>
-                    <td>
-                      <div class="sparkbar" data-color="#f56954" data-height="20">90,-80,90,70,-61,83,63</div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><a href="pages/examples/invoice.html">OR9842</a></td>
-                    <td>Call of Duty IV</td>
-                    <td><span class="label label-success">Shipped</span></td>
-                    <td>
-                      <div class="sparkbar" data-color="#00a65a" data-height="20">90,80,90,-70,61,-83,63</div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <!-- /.table-responsive -->
-          </div>
-          <!-- /.box-body -->
-          <div class="box-footer clearfix">
-            <a href="javascript:void(0)" class="btn btn-sm btn-info btn-flat pull-left">Place New Order</a>
-            <a href="javascript:void(0)" class="btn btn-sm btn-default btn-flat pull-right">View All Orders</a>
-          </div>
-          <!-- /.box-footer -->
-        </div>
-        <!-- /.box -->
       </div>
-      <!-- /.col -->
-
-      <div class="col-md-4">
-        <!-- Info Boxes Style 2 -->
-        <div class="info-box bg-yellow">
-          <span class="info-box-icon"><i class="ion ion-ios-pricetag-outline"></i></span>
-
-          <div class="info-box-content">
-            <span class="info-box-text">Inventory</span>
-            <span class="info-box-number">5,200</span>
-
-            <div class="progress">
-              <div class="progress-bar" style="width: 50%"></div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">Courses Offered By Institute</h2>
             </div>
-            <span class="progress-description">
-                    50% Increase in 30 Days
-                  </span>
-          </div>
-          <!-- /.info-box-content -->
-        </div>
-        <!-- /.info-box -->
-        <div class="info-box bg-green">
-          <span class="info-box-icon"><i class="ion ion-ios-heart-outline"></i></span>
-
-          <div class="info-box-content">
-            <span class="info-box-text">Mentions</span>
-            <span class="info-box-number">92,050</span>
-
-            <div class="progress">
-              <div class="progress-bar" style="width: 20%"></div>
-            </div>
-            <span class="progress-description">
-                    20% Increase in 30 Days
-                  </span>
-          </div>
-          <!-- /.info-box-content -->
-        </div>
-        <!-- /.info-box -->
-        <div class="info-box bg-red">
-          <span class="info-box-icon"><i class="ion ion-ios-cloud-download-outline"></i></span>
-
-          <div class="info-box-content">
-            <span class="info-box-text">Downloads</span>
-            <span class="info-box-number">114,381</span>
-
-            <div class="progress">
-              <div class="progress-bar" style="width: 70%"></div>
-            </div>
-            <span class="progress-description">
-                    70% Increase in 30 Days
-                  </span>
-          </div>
-          <!-- /.info-box-content -->
-        </div>
-        <!-- /.info-box -->
-        <div class="info-box bg-aqua">
-          <span class="info-box-icon"><i class="ion-ios-chatbubble-outline"></i></span>
-
-          <div class="info-box-content">
-            <span class="info-box-text">Direct Messages</span>
-            <span class="info-box-number">163,921</span>
-
-            <div class="progress">
-              <div class="progress-bar" style="width: 40%"></div>
-            </div>
-            <span class="progress-description">
-                    40% Increase in 30 Days
-                  </span>
-          </div>
-          <!-- /.info-box-content -->
-        </div>
-        <!-- /.info-box -->
-
-        <div class="box box-default">
-          <div class="box-header with-border">
-            <h3 class="box-title">Browser Usage</h3>
-
-            <div class="box-tools pull-right">
-              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-            </div>
-          </div>
-          <!-- /.box-header -->
-          <div class="box-body">
-            <div class="row">
-              <div class="col-md-8">
-                <div class="chart-responsive">
-                  <canvas id="pieChart" height="150"></canvas>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label for="playSchool" class="control-label">
+                        <input type="checkbox" name="playSchool" id="playSchool" />School Play School</label>
+                    </div>
+                  </div>
                 </div>
-                <!-- ./chart-responsive -->
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label for="schoolItoX" class="control-label">
+                        <input type="checkbox" name="schoolItoX" id="schoolItoX" />School I - X</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label for="plusTwo" class="control-label">
+                        <input type="checkbox" name="plusTwo" id="plusTwo" />+ 2</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label for="underGraduation" class="control-label">
+                        <input type="checkbox" name="underGraduation" id="underGraduation" /> Under Graduation</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label for="postGraduation" class="control-label">
+                        <input type="checkbox" name="postGraduation" id="postGraduation" />Post Graduation</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label for="otherCourses" class="control-label">
+                        <input type="checkbox" name="otherCourses" />Other Cousrses</label>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <!-- /.col -->
-              <div class="col-md-4">
-                <ul class="chart-legend clearfix">
-                  <li><i class="fa fa-circle-o text-red"></i> Chrome</li>
-                  <li><i class="fa fa-circle-o text-green"></i> IE</li>
-                  <li><i class="fa fa-circle-o text-yellow"></i> FireFox</li>
-                  <li><i class="fa fa-circle-o text-aqua"></i> Safari</li>
-                  <li><i class="fa fa-circle-o text-light-blue"></i> Opera</li>
-                  <li><i class="fa fa-circle-o text-gray"></i> Navigator</li>
-                </ul>
-              </div>
-              <!-- /.col -->
-            </div>
-            <!-- /.row -->
-          </div>
-          <!-- /.box-body -->
-          <div class="box-footer no-padding">
-            <ul class="nav nav-pills nav-stacked">
-              <li><a href="#">United States of America
-                  <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 12%</span></a></li>
-              <li><a href="#">India <span class="pull-right text-green"><i class="fa fa-angle-up"></i> 4%</span></a>
-              </li>
-              <li><a href="#">China
-                  <span class="pull-right text-yellow"><i class="fa fa-angle-left"></i> 0%</span></a></li>
-            </ul>
-          </div>
-          <!-- /.footer -->
-        </div>
-        <!-- /.box -->
-
-        <!-- PRODUCT LIST -->
-        <div class="box box-primary">
-          <div class="box-header with-border">
-            <h3 class="box-title">Recently Added Products</h3>
-
-            <div class="box-tools pull-right">
-              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
             </div>
           </div>
-          <!-- /.box-header -->
-          <div class="box-body">
-            <ul class="products-list product-list-in-box">
-              <li class="item">
-                <div class="product-img">
-                  <img src="assets/img/default-50x50.gif" alt="Product Image">
-                </div>
-                <div class="product-info">
-                  <a href="javascript:void(0)" class="product-title">Samsung TV
-                      <span class="label label-warning pull-right">$1800</span></a>
-                  <span class="product-description">
-                          Samsung 32" 1080p 60Hz LED Smart HDTV.
-                        </span>
-                </div>
-              </li>
-              <!-- /.item -->
-              <li class="item">
-                <div class="product-img">
-                  <img src="assets/img/default-50x50.gif" alt="Product Image">
-                </div>
-                <div class="product-info">
-                  <a href="javascript:void(0)" class="product-title">Bicycle
-                      <span class="label label-info pull-right">$700</span></a>
-                  <span class="product-description">
-                          26" Mongoose Dolomite Men's 7-speed, Navy Blue.
-                        </span>
-                </div>
-              </li>
-              <!-- /.item -->
-              <li class="item">
-                <div class="product-img">
-                  <img src="assets/img/default-50x50.gif" alt="Product Image">
-                </div>
-                <div class="product-info">
-                  <a href="javascript:void(0)" class="product-title">Xbox One <span class="label label-danger pull-right">$350</span></a>
-                  <span class="product-description">
-                          Xbox One Console Bundle with Halo Master Chief Collection.
-                        </span>
-                </div>
-              </li>
-              <!-- /.item -->
-              <li class="item">
-                <div class="product-img">
-                  <img src="assets/img/default-50x50.gif" alt="Product Image">
-                </div>
-                <div class="product-info">
-                  <a href="javascript:void(0)" class="product-title">PlayStation 4
-                      <span class="label label-success pull-right">$399</span></a>
-                  <span class="product-description">
-                          PlayStation 4 500GB Console (PS4)
-                        </span>
-                </div>
-              </li>
-              <!-- /.item -->
-            </ul>
-          </div>
-          <!-- /.box-body -->
-          <div class="box-footer text-center">
-            <a href="javascript:void(0)" class="uppercase">View All Products</a>
-          </div>
-          <!-- /.box-footer -->
         </div>
-        <!-- /.box -->
       </div>
-      <!-- /.col -->
-    </div>
-    <!-- /.row -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">Contact Person Details</h2>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="contactName" class="control-label">Contact Name</label>
+                    <input type="text" name="contactName" class="form-control" id="contactName" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="designation" class="control-label">Designation</label>
+                    <input type="text" name="designation" class="form-control" id="designation" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="contactPersonPlotNumber" class="control-label"> Plot Number</label>
+                    <input type="text" name="contactPersonPlotNumber" class="form-control" id="contactPersonPlotNumber" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="contactPersonStreet" class="control-label"> Street/Area</label>
+                    <input type="text" name="contactPersonStreet" class="form-control" id="contactPersonStreet" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="contactPersonTaluq" class="control-label"> Taluq/Mandal</label>
+                    <input type="text" name="contactPersonTaluq" class="form-control" id="contactPersonTaluq" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="contactPersonCity" class="control-label"> Town/City</label>
+                    <input type="text" name="contactPersonCity" class="form-control" id="contactPersonCity" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="contactPersonDistrict" class="control-label"> District</label>
+                    <input type="text" name="contactPersonDistrict" class="form-control" id="contactPersonDistrict" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="contactPersonState" class="control-label"> State</label>
+                    <input type="text" name="contactPersonState" class="form-control" id="contactPersonState" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="contactPersonPIN" class="control-label"> Pincode</label>
+                    <input type="text" name="contactPersonPIN" class="form-control" id="contactPersonPIN" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="contactPersonPhone" class="control-label"> Phone No</label>
+                    <input type="tel" name="contactPersonPhone" class="form-control" id="contactPersonPhone" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="contactPersonMobile" class="control-label"> Mobile No</label>
+                    <input type="tel" name="contactPersonMobile" class="form-control" id="contactPersonMobile" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="contactPersonFax" class="control-label"> Fax</label>
+                    <input type="tel" name="contactPersonFax" class="form-control" id="contactPersonFax" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="contactPersonEmail" class="control-label"> Email</label>
+                    <input type="email" name="contactPersonEmail" class="form-control" id="contactPersonEmail" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">Institute Website Details</h2>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="instituteEmail" class="control-label">Institute Email</label>
+                    <input type="text" name="instituteEmail" class="form-control" id="instituteEmail" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="instiituteWebsilte" class="control-label">Instiitute Websilte URL</label>
+                    <input type="text" name="instiituteWebsilte" class="form-control" id="instiituteWebsilte" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">Social Network URLs</h2>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label for="facebook" class="control-label">
+                        <input type="checkbox" name="facebook" id="facebook" />Facebook</label>
+                    </div>
+                    <input type="text" name="facebook-input" class="form-control" id="facebook-input" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label for="twitter" class="control-label">
+                        <input type="checkbox" name="twitter" id="twitter" />Twitter</label>
+                    </div>
+                    <input type="text" name="twitter-input" class="form-control" id="twitter-input" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">Declaration </h2>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label for="declaration" class="control-label">
+                        <input type="checkbox" name="declaration" id="declaration" />I Declare what ever submited are true</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <button class="btn btn-primary active" type="submit">Submit </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
   </section>
   <!-- /.content -->
 </div>
