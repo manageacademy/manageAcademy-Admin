@@ -9,8 +9,8 @@ import { RouterModule } from '@angular/router';
 @NgModule({
   imports: [
     RouterModule.forRoot([
-      { path: '', redirectTo: 'admin', pathMatch: 'full' },
-      { path: 'admin', component: AdminComponent },
+      { path: '', redirectTo: 'starter', pathMatch: 'full' },
+      { path: 'starter', component: StarterComponent },
     ])
   ],
   declarations: [],
