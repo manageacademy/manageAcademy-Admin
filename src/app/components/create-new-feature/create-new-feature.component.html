@@ -1,0 +1,22 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <label>Add New Feature</label>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="onNoClick()"><span
+                aria-hidden="true">&times;</span></button>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-2 col-sm-2 col-lg-2 col-xs-2">
+                <ul class="list-group">
+                    <li class="list-group-item" *ngFor="let control of formControls">
+                        {{control.label}}
+                        <span (click)="showCreateNewFeatureControlModel(control)" class="glyphicon glyphicon-plus pull-right button-mode" aria-hidden="true"></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-10 col-sm-10 col-lg-10 col-xs-10">
+
+            </div>
+        </div>
+    </div>
+</div>

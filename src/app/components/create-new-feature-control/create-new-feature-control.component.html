@@ -1,0 +1,33 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <label>Add New Feature Controller</label>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="onNoClick()"><span
+                aria-hidden="true">&times;</span></button>
+    </div>
+    <div class="panel-body">
+        <form #createNewFeatureControlForm="ngForm" (submit)="onSubmit()">
+            <div class="form-group">
+                <label>Controller Type</label>
+                <select class="form-control" placeholder="Controller Type" required name="type" [(ngModel)]="data.type">
+                    <option *ngFor="let control of formControls" [value]="control.id">{{control.label}}</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Controller Label</label>
+                <input type="text" class="form-control" placeholder="Controller Label" required name="label" [(ngModel)]="data.label">
+            </div>
+            <div class="form-group">
+                <label>Controller Placeholder</label>
+                <input type="text" class="form-control" placeholder="Controller Placeholder" required name="placeHolder" [(ngModel)]="data.placeHolder">
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="required" [(ngModel)]="data.required"> Controller Required
+                </label>
+            </div>
+            <div class="pull-right">
+                <button type="submit" [disabled]="!createNewFeatureControlForm.valid" class="btn btn-default">Add</button>
+            </div>
+        </form>
+    </div>
+</div>

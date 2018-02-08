@@ -1,0 +1,13 @@
+:host {
+    min-height: 300px;
+    display: block;
+}
+
+.panel-body {
+    min-height: 300px;
+    /*padding: 0px;*/
+}
+
+.panel {
+    margin: 0px !important;
+}

@@ -1,15 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import * as _ from 'underscore';
+import * as moment from 'moment';
+import {CreateNewFeatureService} from '../../components/create-new-feature/create-new-feature.service';
 
 @Component({
-  selector: 'app-starter-control-sidebar',
-  templateUrl: './starter-control-sidebar.component.html',
-  styleUrls: ['./starter-control-sidebar.component.css']
+    selector: 'app-starter-control-sidebar',
+    templateUrl: './starter-control-sidebar.component.html',
+    styleUrls: ['./starter-control-sidebar.component.css']
 })
 export class StarterControlSidebarComponent implements OnInit {
 
-  constructor() { }
+    public newFeature = {name: '', description: ''};
 
-  ngOnInit() {
-  }
+    constructor() {
+    }
+
+    onSubmit(): void {
+    }
+
+    ngOnInit() {
+    }
 
 }
